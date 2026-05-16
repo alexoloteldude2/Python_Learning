@@ -1,0 +1,12 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="reason">
+    Page Not Found - ERROR 404
+    <span class="float-right">
+        <a href="{{ url_for('index') }}">Go Back</a>
+    </span>
+</div>
+<img alt="Walking Totoro" class="totoro" src="{{ url_for('static', filename='images/Logo.jpg') }}" title="to~to~ro~">
+{% endblock %}
